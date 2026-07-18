@@ -1,66 +1,149 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eyad Store</title>
 
-    <title>Eyad Store</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            background:#121212;
-            color:white;
-            text-align:center;
-            margin:0;
-        }
+body{
+background:#111827;
+color:white;
+}
 
-        header{
-            background:#1f1f1f;
-            padding:20px;
-        }
+header{
+background:#1f2937;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-        h1{
-            color:#00ff99;
-        }
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#00ff99;
+}
 
-        .btn{
-            display:inline-block;
-            margin:20px;
-            padding:15px 30px;
-            background:#00ff99;
-            color:black;
-            text-decoration:none;
-            border-radius:10px;
-            font-weight:bold;
-        }
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-weight:bold;
+}
 
-        .box{
-            margin-top:50px;
-        }
-    </style>
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:48px;
+color:#00ff99;
+}
+
+.hero p{
+margin-top:20px;
+font-size:20px;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#00ff99;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:10px;
+}
+
+.games{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+padding:40px;
+}
+
+.card{
+background:#1f2937;
+width:250px;
+border-radius:15px;
+padding:20px;
+text-align:center;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#1f2937;
+margin-top:50px;
+}
+</style>
 
 </head>
 
 <body>
 
-{% include 'includes/navbar.html' %}
-
 <header>
-    <h1>🎮 Eyad Store</h1>
-</header>
 
-<div class="box">
-
-<h2>مرحبًا بك في متجر إياد</h2>
-
-<p>أفضل مكان لتحميل الألعاب والبرامج.</p>
-
-<a class="btn" href="/games">🎮 الألعاب</a>
-
+<div class="logo">
+🎮 Eyad Store
 </div>
 
-</body>
+<nav>
+<a href="/">الرئيسية</a>
+<a href="/games">الألعاب</a>
+</nav>
 
+</header>
+
+<section class="hero">
+
+<h1>أفضل الألعاب والبرامج</h1>
+
+<p>حمل ألعابك المفضلة بسهولة ومن مكان واحد.</p>
+
+<a href="/games" class="btn">استكشف الألعاب</a>
+
+</section>
+
+<section class="games">
+
+<div class="card">
+<h3>🔥 Free Fire</h3>
+<p>قريبًا...</p>
+</div>
+
+<div class="card">
+<h3>🚗 GTA V</h3>
+<p>قريبًا...</p>
+</div>
+
+<div class="card">
+<h3>⚔ PUBG</h3>
+<p>قريبًا...</p>
+</div>
+
+</section>
+
+<footer>
+
+Eyad Store © 2026
+
+</footer>
+
+</body>
 </html>
