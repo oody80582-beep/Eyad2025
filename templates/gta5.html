@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
-<title>GTA V | Eyad Store</title>
-<style>
-body{
-background:#111827;
-color:white;
-font-family:Arial;
-text-align:center;
-padding:30px;
-}
-img{
-width:350px;
-border-radius:15px;
-}
-a{
-display:inline-block;
-margin-top:20px;
-padding:15px 30px;
-background:#00ff99;
-color:black;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GTA V - Eyad Store</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
+
 <body>
 
-<h1>🎮 GTA V</h1>
+<header>
+<div class="logo">🚗 Eyad Store</div>
+</header>
 
-<img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" alt="GTA V">
+
+<section class="hero">
+
+<h1>🚗 Grand Theft Auto V</h1>
 
 <p>
-Grand Theft Auto V هي لعبة عالم مفتوح من تطوير Rockstar Games.
+لعبة عالم مفتوح مشهورة، مليئة بالمغامرات والاستكشاف والمهام.
 </p>
 
-<a href="https://www.rockstargames.com/gta-v" target="_blank">
+</section>
+
+
+<section class="cards">
+
+<div class="card">
+
+<h3>🎮 معلومات اللعبة</h3>
+
+<p>
+النوع: عالم مفتوح ومغامرات
+</p>
+
+<p>
+المنصات: PC / PlayStation / Xbox
+</p>
+
+<p>
+التقييم: ⭐⭐⭐⭐⭐
+</p>
+
+<a class="btn" href="https://www.rockstargames.com/gta-v">
 الموقع الرسمي
 </a>
+
+</div>
+
+</section>
+
+
+<footer>
+Eyad Store © 2026
+</footer>
 
 </body>
 </html>
