@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eyad Store</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#121212;
+            color:white;
+            text-align:center;
+            margin:0;
+        }
+
+        header{
+            background:#1f1f1f;
+            padding:20px;
+        }
+
+        h1{
+            color:#00ff99;
+        }
+
+        .btn{
+            display:inline-block;
+            margin:20px;
+            padding:15px 30px;
+            background:#00ff99;
+            color:black;
+            text-decoration:none;
+            border-radius:10px;
+            font-weight:bold;
+        }
+
+        .box{
+            margin-top:50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+{% include 'includes/navbar.html' %}
+
+<header>
+    <h1>🎮 Eyad Store</h1>
+</header>
+
+<div class="box">
+
+<h2>مرحبًا بك في متجر إياد</h2>
+
+<p>أفضل مكان لتحميل الألعاب والبرامج.</p>
+
+<a class="btn" href="/games">🎮 الألعاب</a>
+
+</div>
+
+</body>
+
+</html>
