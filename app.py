@@ -2,6 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -40,6 +41,33 @@ def puzzle():
 @app.route("/horror")
 def horror():
     return render_template("horror.html")
+
+
+# صفحات الألعاب
+
+@app.route("/asphalt")
+def asphalt():
+    return render_template("asphalt.html")
+
+
+@app.route("/gta5")
+def gta5():
+    return render_template("gta5.html")
+
+
+@app.route("/fcmobile")
+def fcmobile():
+    return render_template("fcmobile.html")
+
+
+@app.route("/braintest")
+def braintest():
+    return render_template("braintest.html")
+
+
+@app.route("/granny")
+def granny():
+    return render_template("granny.html")
 
 
 if __name__ == "__main__":
